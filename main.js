@@ -27,7 +27,7 @@ $(document).ready(function () {
     let counter = setInterval(timer, 1000);
     let count;
 
-    //Setujemo count varijablu zavisno od sirine ekrana
+    //Set-ujemo count varijablu zavisno od sirine ekrana
     if ($(window).width() < 769) {
       count = 6;
     } else {
@@ -122,7 +122,7 @@ function checkLettersOrderOnClick() {
   });
 }
 
-//Funckija koja proverava da li postoji preklapanje dva pravougaonika koristeci 2d collision detection algoritam
+//Funkcija koja proverava da li postoji preklapanje dva pravougaonika koristeci 2d collision detection algoritam
 //https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection
 function checkCollision(rect1, rect2) {
   first = rect1.getBoundingClientRect();
