@@ -1,0 +1,111 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000;
+  font-family: "Kanit", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.overlay h1 {
+  font-size: 6rem;
+  margin: 0;
+}
+
+.overlay button {
+  font-family: "Kanit", sans-serif;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.letter {
+  position: fixed;
+  color: white;
+  font-size: 4rem;
+  display: none;
+  cursor: pointer;
+  line-height: 1;
+  user-select: none;
+}
+
+.letter:hover {
+  text-shadow: 0 0 5px;
+}
+
+.p {
+  left: 40%;
+}
+
+.o {
+  left: 45%
+}
+
+.s {
+  left: 50.5%
+}
+
+.a {
+  left:55%;
+}
+
+.o-2 {
+  left: 60%
+}
+
+.alert {
+  color: #ff3e41;
+  font-size: 6rem;
+}
+
+.success {
+  color: #70ee9c;
+}
+
+.time-counter {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  color: white;
+  font-size: 15rem;
+  opacity: 0.1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .letter {
+    font-size: 1.4rem;
+  }
+
+  .overlay h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  #new_game {
+    font-size: 1.3rem;
+  }
+
+}
